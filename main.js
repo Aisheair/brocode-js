@@ -10,11 +10,29 @@
 
 // let x = 123;
 
-console.log(x);
+// console.log(x);
 
-let age = 25;
-let price = 10.99;
-let gpa = 2.1;
-console.log(`you are ${age} years old`);
-console.log(`the price is $${price}`);
-console.log(`your gpa is: ${gpa}`);
+// let age = 25;
+// let price = 10.99;
+// let gpa = 2.1;
+// console.log(`you are ${age} years old`);
+// console.log(`the price is $${price}`);
+// console.log(`your gpa is: ${gpa}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
