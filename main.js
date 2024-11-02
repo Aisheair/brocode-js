@@ -23,6 +23,29 @@
 
 
 
+// how to accept user input
+
+// 1. EASY WAY = window promt
+// 2. PROFESSIONAL WAY = HTML textbox
+
+
+// let username = username = window.prompt("whtats your user name?");
+
+// console.log(username);
+
+
+let username;
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("mytext").value;
+    // console.log(username);
+    document.getElementById("myh1").textContent = `hello ${username}`;
+    
+}
+
+
+
+
+
 
 
 
