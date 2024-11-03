@@ -34,28 +34,76 @@
 // console.log(username);
 
 
-let username;
-document.getElementById("mySubmit").onclick = function(){
-    username = document.getElementById("mytext").value;
-    // console.log(username);
-    document.getElementById("myh1").textContent = `hello ${username}`;
+// let username;
+// document.getElementById("mySubmit").onclick = function(){
+//     username = document.getElementById("mytext").value;
+//     // console.log(username);
+//     document.getElementById("myh1").textContent = `hello ${username}`;
     
-}
+// }
 
 
 
+//type conversion = change the datatype of a value to another
+//                  (string, number, booleans)
+
+// let age = window.prompt("how old are you??");
+// age = Number(age)
+// age += 1
+
+// console.log(age, typeof age);
+
+// let x = "Pizza";
+// let y = "Pizza";
+// let z = "Pizza";
+
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z)
+
+// console.log(x, typeof x); // NaN number
+// console.log(y, typeof y); // pizza string
+// console.log(z, typeof z); // true boolean 
 
 
 
+// let a = "0";
+// let b = "0";
+// let c = "0";
+
+// a = Number(a);
+// b = String(b);
+// c = Boolean(c)
+
+// console.log(a, typeof a); // 0 number
+// console.log(b, typeof b); // 0 string
+// console.log(c, typeof c); // true boolean 
+
+// let a = "";
+// let b = "";
+// let c = "";
+
+// a = Number(a);
+// b = String(b);
+// c = Boolean(c)
+
+// console.log(a, typeof a); // 0 number
+// console.log(b, typeof b); // string
+// console.log(c, typeof c); // false boolean 
 
 
 
+let x;
+let y;
+let z;
 
+x = Number(x);
+y = String(y);
+z = Boolean(z)
 
-
-
-
-
+console.log(x, typeof x); // NaN number
+console.log(y, typeof y); // undefine string
+console.log(z, typeof z); // false boolean 
 
 
 
