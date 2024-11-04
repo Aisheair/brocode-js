@@ -93,17 +93,44 @@
 
 
 
-let x;
-let y;
-let z;
+// let x;
+// let y;
+// let z;
 
-x = Number(x);
-y = String(y);
-z = Boolean(z)
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z)
 
-console.log(x, typeof x); // NaN number
-console.log(y, typeof y); // undefine string
-console.log(z, typeof z); // false boolean 
+// console.log(x, typeof x); // NaN number
+// console.log(y, typeof y); // undefine string
+// console.log(z, typeof z); // false boolean 
+
+// const = a variable that can't be change
 
 
+// const PI = 3.14159;
+// let radius;
+// let circumference;
+
+// radius = window.prompt("Enter the radious(cm) of a circle:");
+
+// radius = Number(radius);
+
+// circumference = 2 * PI * radius;
+
+// console.log(`circumference is : ${circumference} cm`);
+
+
+
+const PI = 3.14159;
+let radius;
+let circumference;
+
+document.getElementById("mySubmit").onclick = function(){
+
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH3").textContent = `circumference of the circle is ${circumference}cm`
+}
 
