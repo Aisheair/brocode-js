@@ -122,15 +122,90 @@
 
 
 
-const PI = 3.14159;
-let radius;
-let circumference;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
-document.getElementById("mySubmit").onclick = function(){
+// document.getElementById("mySubmit").onclick = function(){
 
-    radius = document.getElementById("myText").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius;
-    document.getElementById("myH3").textContent = `circumference of the circle is ${circumference}cm`
-}
+//     radius = document.getElementById("myText").value;
+//     radius = Number(radius);
+//     circumference = 2 * PI * radius;
+//     document.getElementById("myH3").textContent = `circumference of the circle is ${circumference}cm`
+// }
+
+
+
+// IF STATEMENT = if a condition is true, execute some code 
+//                if not, do something else!!
+
+
+// let age = 5;
+
+// if(age >= 18){
+//     console.log("You are old enough to enter!");
+// }
+// else{
+//     console.log("you must be 18+ to enter!!");
+    
+// }
+
+
+// let isStudent = false;
+// if (isStudent) {  //by default true 
+//     console.log("u are a student!!");
+    
+// } 
+// else{
+//     console.log("u are not a student!!");
+// }
+
+
+// let age = 25;
+// let hasLicense = false;
+
+// if(age >= 16){
+//     console.log("You are old enough to drive");
+    
+//     if(hasLicense){
+//         console.log("you have your License");
+        
+//     }
+//     else{
+//         console.log("you do not have your license");
+        
+//     }
+// }
+// else{
+//     console.log("You mustbe 16+  tohave  a license");
+
+// }
+
+// now else-if statement
+
+// let age  = 0;
+
+// if(age >= 100){
+//     console.log("you are way too old to enter");
+    
+// }
+// else if(age == 0){
+//     console.log("you are justborn fuck off");
+    
+// }
+// else if (age >= 18) {
+//     console.log("You are  old enough to enter this site!!!");
+// }
+// else if(age < 0){
+//     console.log("yourage  cant be below 0");
+    
+// }
+// else{
+//     console.log("you must be 18+ to enter this site");
+    
+// }
+
+
+
+
 
