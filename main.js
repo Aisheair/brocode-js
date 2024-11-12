@@ -229,59 +229,116 @@
 
 // SWITCH = can be an efficient replacement to many if statement
 
-let day = 7;
+// let day = 7;
 
-switch(day){
-    case 1:
-        console.log("it is monday");
-        break;
-    case 2:
-        console.log("it is Tuesday");
-        break;
-    case 3:
-        console.log("it is Wednesday");
-        break;
-    case 4:
-        console.log("it is Thusday");
-        break;
-    case 5:
-        console.log("it is Friday");
-        break;
-    case 6:
-        console.log("it is Saturday");
-        break;
-    case 7:
-        console.log("it is Sunday");
-        break;
-    default:
-        console.log(`${day} is not a day`);
+// switch(day){
+//     case 1:
+//         console.log("it is monday");
+//         break;
+//     case 2:
+//         console.log("it is Tuesday");
+//         break;
+//     case 3:
+//         console.log("it is Wednesday");
+//         break;
+//     case 4:
+//         console.log("it is Thusday");
+//         break;
+//     case 5:
+//         console.log("it is Friday");
+//         break;
+//     case 6:
+//         console.log("it is Saturday");
+//         break;
+//     case 7:
+//         console.log("it is Sunday");
+//         break;
+//     default:
+//         console.log(`${day} is not a day`);
         
+// }
+
+// let testScore = 66;
+// let letterGrade;
+
+// switch(true){
+//     case testScore >= 90:
+//         letterGrade = "A";
+//         break;
+//     case testScore >= 80:
+//         letterGrade = "B";
+//         break;
+//     case testScore >= 70:
+//         letterGrade = "C";
+//         break;
+//     case testScore >= 60:
+//         letterGrade = "D";
+//         break;
+//     case testScore >= 50:
+//         letterGrade = "E";
+//         break;
+//         default:
+//             letterGrade = "F";
+// }
+
+// console.log(letterGrade);
+
+
+
+// String method = allow you to manipulate and work with text (string)
+
+let userName = "Brocode";
+
+console.log(userName.charAt(0)); // depens on what index u put
+console.log(userName.indexOf("o")); // first index of that character
+console.log(userName.lastIndexOf("o")); // last index of that character
+console.log(userName.length); // length of the character
+console.log(userName.toUpperCase()); 
+console.log(userName.toLowerCase()); // length of the character
+console.log(userName.repeat(3)); // repeat a string
+
+let result = userName.startsWith(" "); 
+// let result = userName.endsWith(" "); 
+
+if(result){
+    console.log("your username cant start with ' ' ");
+    
+}
+else{
+    console.log(userName);
 }
 
-let testScore = 66;
-let letterGrade;
 
-switch(true){
-    case testScore >= 90:
-        letterGrade = "A";
-        break;
-    case testScore >= 80:
-        letterGrade = "B";
-        break;
-    case testScore >= 70:
-        letterGrade = "C";
-        break;
-    case testScore >= 60:
-        letterGrade = "D";
-        break;
-    case testScore >= 50:
-        letterGrade = "E";
-        break;
-        default:
-            letterGrade = "F";
-}
+let userName1 = "    Brocode1      ";
 
-console.log(letterGrade);
+userName1 = userName1.trim();
+
+console.log(userName1);
+
+
+let phoneNumber = "123-456-789";
+
+console.log(phoneNumber.padStart(15, "0"));
+console.log(phoneNumber.padEnd(15, "0"));
+
+
+phoneNumber = phoneNumber.replaceAll("-","/") // phoneNumber.replaceAll("what to reples", "what to reples with")
+ 
+console.log(phoneNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
