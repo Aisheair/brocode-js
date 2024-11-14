@@ -322,47 +322,69 @@
 // console.log(phoneNumber.padEnd(15, "0"));
 
 
-// phoneNumber = phoneNumber.replaceAll("-","/") // phoneNumber.replaceAll("what to reples", "what to reples with")
+// // phoneNumber = phoneNumber.replaceAll("-","/") // phoneNumber.replaceAll("what to reples", "what to reples with")
  
-// console.log(phoneNumber);
+// // console.log(phoneNumber);
 
 
 
-// string slicing = creating a substring frome a
-//                  portion of another string
+// // string slicing = creating a substring frome a
+// //                  portion of another string
 
-//                  string.slice(start, end)
-
-
-const fullName = "Broshep codesh";
-
-// let firstName = fullName.slice(0, 3);
-// let lastName = fullName.slice(4);
-
-// let firstchar = fullName.slice(0, 1);
-// let lastchar = fullName.slice(-1);
-
-// console.log(firstchar);
-// console.log(lastchar);
-
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+// //                  string.slice(start, end)
 
 
-console.log(firstName);
-console.log(lastName);
+// const fullName = "Broshep codesh";
+
+// // let firstName = fullName.slice(0, 3);
+// // let lastName = fullName.slice(4);
+
+// // let firstchar = fullName.slice(0, 1);
+// // let lastchar = fullName.slice(-1);
+
+// // console.log(firstchar);
+// // console.log(lastchar);
+
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 
 
-const email = "ankitkargupta@gmail.com";
-
-let username  = email.slice(0, email.indexOf("@"));
-let extention = email.slice(email.indexOf("@"));
-console.log(username);
-console.log(extention);
+// console.log(firstName);
+// console.log(lastName);
 
 
+// const email = "ankitkargupta@gmail.com";
+
+// let username  = email.slice(0, email.indexOf("@"));
+// let extention = email.slice(email.indexOf("@"));
+// console.log(username);
+// console.log(extention);
 
 
+// Method chaining = Calling one method after another
+//                   in one continuous line of code
+
+let userName = window.prompt("enter your uusername: ")
+
+// ------------------------ NO METHOD CHAINING -----------------------
+
+
+ userName = userName.trim();
+ let letter = userName.charAt(0);
+ letter = letter.toUpperCase();
+
+ let extraChar = userName.slice(1)
+extraChar = extraChar.toLowerCase();
+userName = letter + extraChar;
+
+console.log(userName);
+
+
+
+// ------------------------ METHOD CHAINING --------------------------
+
+userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+console.log(userName);
 
 
 
