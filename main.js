@@ -364,38 +364,57 @@
 // Method chaining = Calling one method after another
 //                   in one continuous line of code
 
-let userName = window.prompt("enter your uusername: ")
+// let userName = window.prompt("enter your uusername: ")
 
-// ------------------------ NO METHOD CHAINING -----------------------
-
-
- userName = userName.trim();
- let letter = userName.charAt(0);
- letter = letter.toUpperCase();
-
- let extraChar = userName.slice(1)
-extraChar = extraChar.toLowerCase();
-userName = letter + extraChar;
-
-console.log(userName);
+// // ------------------------ NO METHOD CHAINING -----------------------
 
 
+//  userName = userName.trim();
+//  let letter = userName.charAt(0);
+//  letter = letter.toUpperCase();
 
-// ------------------------ METHOD CHAINING --------------------------
+//  let extraChar = userName.slice(1)
+// extraChar = extraChar.toLowerCase();
+// userName = letter + extraChar;
 
-userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
-console.log(userName);
+// console.log(userName);
 
 
 
+// // ------------------------ METHOD CHAINING --------------------------
+
+// userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+// console.log(userName);
 
 
+// logical operator = used to combine or manipulate boolean values
+//                    (true or false)
+
+//                    AND = &&
+//                    OR  = ||
+//                    NOT = !     
+
+const temp = -20;
+
+if(temp <= 0 || temp > 30 ){
+    console.log("bad");
+    
+}
+else{
+    console.log("good");
+    
+}
 
 
+const isSunny = true;
 
-
-
-
+if (! isSunny) {
+    console.log("not sunny");
+    
+}
+else{
+    console.log("it is sunny");
+}
 
 
 
