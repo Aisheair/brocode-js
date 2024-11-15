@@ -446,23 +446,54 @@
 // console.log(`Hello ${userName}`);    
 
 
-let loggedIn  = false;
-let userName;
-let password;
+// let loggedIn  = false;
+// let userName;
+// let password;
 
-while (!loggedIn) {
-    userName = window.prompt("Enter your username:")
-    password = window.prompt("Enter your password")
+// while (!loggedIn) {
+//     userName = window.prompt("Enter your username:")
+//     password = window.prompt("Enter your password")
 
-    if(userName === "bro" && password === "444"){
-        loggedIn = true;
-        console.log("You are loged in welcome ");
+//     if(userName === "bro" && password === "444"){
+//         loggedIn = true;
+//         console.log("You are loged in welcome ");
+//     }
+//     else{
+//         console.log("invalid");
+        
+//     }
+// }
+
+
+// for loop = repeat  some code a LIMITED amout of times
+
+
+// for(let i = 10; i > 0; i--0){
+//     console.log(i);
+// }
+
+// console.log("happy new year");
+
+
+for(let i = 1; i <= 20; i++){
+
+    if(i == 13){
+        // continue; //this will skip the number 13
+        breakk; // the for loop will exit entairly
     }
     else{
-        console.log("invalid");
+        console.log(i);
         
     }
+
+    
 }
+
+
+
+
+
+
 
 
 
