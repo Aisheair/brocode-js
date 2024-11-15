@@ -394,27 +394,49 @@
 //                    OR  = ||
 //                    NOT = !     
 
-const temp = -20;
+// const temp = -20;
 
-if(temp <= 0 || temp > 30 ){
-    console.log("bad");
+// if(temp <= 0 || temp > 30 ){
+//     console.log("bad");
     
+// }
+// else{
+//     console.log("good");
+    
+// }
+
+
+// const isSunny = true;
+
+// if (! isSunny) {
+//     console.log("not sunny");
+    
+// }
+// else{
+//     console.log("it is sunny");
+// }
+
+
+
+//   = assignment operator 
+//  == comparison operator  ( compareif value are equal )
+// === strict equality operator (compare if values & datatype are equal)
+//  != inequality operator
+// !== strict inequality operator
+
+const PI = "3.14";
+
+if(PI !== "3.14"){
+    console.log("That is not a PI");
 }
 else{
-    console.log("good");
-    
+    console.log("That is a PI");
 }
 
 
-const isSunny = true;
 
-if (! isSunny) {
-    console.log("not sunny");
-    
-}
-else{
-    console.log("it is sunny");
-}
+
+
 
 
 
