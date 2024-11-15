@@ -421,27 +421,48 @@
 //   = assignment operator 
 //  == comparison operator  ( compareif value are equal )
 // === strict equality operator (compare if values & datatype are equal)
-//  != inequality operator
-// !== strict inequality operator
+// //  != inequality operator
+// // !== strict inequality operator
 
-const PI = "3.14";
+// const PI = "3.14";
 
-if(PI !== "3.14"){
-    console.log("That is not a PI");
+// if(PI !== "3.14"){
+//     console.log("That is not a PI");
+// }
+// else{
+//     console.log("That is a PI");
+// }
+
+
+// hile loop = repeat some code condition is true
+
+
+// let userName;
+
+// do{
+//     userName = window.prompt("Enter your name");
+// }while (userName === "" || userName === null) 
+
+// console.log(`Hello ${userName}`);    
+
+
+let loggedIn  = false;
+let userName;
+let password;
+
+while (!loggedIn) {
+    userName = window.prompt("Enter your username:")
+    password = window.prompt("Enter your password")
+
+    if(userName === "bro" && password === "444"){
+        loggedIn = true;
+        console.log("You are loged in welcome ");
+    }
+    else{
+        console.log("invalid");
+        
+    }
 }
-else{
-    console.log("That is a PI");
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
