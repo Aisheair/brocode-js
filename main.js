@@ -505,44 +505,44 @@
 // happybirthday("brocoede", 25);
 // happybirthday("Ankit", 15);
 
-function add(x, y){
-    // let result = x + y;
-    return x + y
-    // return result;
+// function add(x, y){
+//     // let result = x + y;
+//     return x + y
+//     // return result;
     
-}
-function substract(x, y){
-    return x - y;
-}
-function multiply(x, y){
-    return y * x;
-}
-function devide(x, y){
-    return y / x;
-}
-function isEven(number){
-    if(number % 2 === 0 ){
-        return true
-    }
-    else{
-        return false
-    }
-    // you can also use
-    // return number % 2 === 0 ? true : false;
-}
+// }
+// function substract(x, y){
+//     return x - y;
+// }
+// function multiply(x, y){
+//     return y * x;
+// }
+// function devide(x, y){
+//     return y / x;
+// }
+// function isEven(number){
+//     if(number % 2 === 0 ){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+//     // you can also use
+//     // return number % 2 === 0 ? true : false;
+// }
 
-function isValidEmail(email){
-    if (email.includes("@")) {
-        return true;
-    }
-    else{
-        return false
-    }
-}
+// function isValidEmail(email){
+//     if (email.includes("@")) {
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+// }
 
-console.log(isValidEmail("brosexy.com"));
-console.log(isValidEmail("elonmusk.com"));
-console.log(isValidEmail("zukarboard@meta.com"));
+// console.log(isValidEmail("brosexy.com"));
+// console.log(isValidEmail("elonmusk.com"));
+// console.log(isValidEmail("zukarboard@meta.com"));
 
 
 
@@ -557,9 +557,24 @@ console.log(isValidEmail("zukarboard@meta.com"));
 // console.log(answer);
 
 
+// variable scope = where a variable is recognized
+//                  and accessible (local vs global)
+
+let x = 3;
+
+function1();
 
 
-
+function function1() {
+    let x = 1
+    console.log(x);
+    
+}
+function function2() {
+    let x = 2
+    console.log(x);
+    
+}
 
 
 
