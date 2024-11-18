@@ -475,19 +475,91 @@
 // console.log("happy new year");
 
 
-for(let i = 1; i <= 20; i++){
+// for(let i = 1; i <= 20; i++){
 
-    if(i == 13){
-        // continue; //this will skip the number 13
-        breakk; // the for loop will exit entairly
-    }
-    else{
-        console.log(i);
+//     if(i == 13){
+//         // continue; //this will skip the number 13
+//         breakk; // the for loop will exit entairly
+//     }
+//     else{
+//         console.log(i);
         
-    }
+//     }
 
     
+// }
+
+
+// function = A section of reusable  code
+//            Devlare code once, use it whenever you want
+//            xall the function to execute that code         
+
+// function happybirthday(username, age){
+//     console.log("Happy birthday to you!");
+//     console.log("Happy birthday to you!");
+//     console.log(`Happy birthday dear ${username}!`);
+//     console.log(`You are ${age} years old`);
+    
+// }
+
+// happybirthday("brocoede", 25);
+// happybirthday("Ankit", 15);
+
+function add(x, y){
+    // let result = x + y;
+    return x + y
+    // return result;
+    
 }
+function substract(x, y){
+    return x - y;
+}
+function multiply(x, y){
+    return y * x;
+}
+function devide(x, y){
+    return y / x;
+}
+function isEven(number){
+    if(number % 2 === 0 ){
+        return true
+    }
+    else{
+        return false
+    }
+    // you can also use
+    // return number % 2 === 0 ? true : false;
+}
+
+function isValidEmail(email){
+    if (email.includes("@")) {
+        return true;
+    }
+    else{
+        return false
+    }
+}
+
+console.log(isValidEmail("brosexy.com"));
+console.log(isValidEmail("elonmusk.com"));
+console.log(isValidEmail("zukarboard@meta.com"));
+
+
+
+
+// console.log(isEven(11));
+
+
+
+// console.log(add(2, 3));
+// or
+// let answer = add(2, 3);
+// console.log(answer);
+
+
+
+
+
 
 
 
