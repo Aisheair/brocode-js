@@ -560,28 +560,45 @@
 // variable scope = where a variable is recognized
 //                  and accessible (local vs global)
 
-let x = 3;
+// let x = 3;
 
-function1();
+// function1();
 
 
-function function1() {
-    let x = 1
-    console.log(x);
+// function function1() {
+//     let x = 1
+//     console.log(x);
+    
+// }
+// function function2() {
+//     let x = 2
+//     console.log(x);
+    
+// }
+
+
+
+// array = a variable like structure that can hold
+//         more than 1 value
+
+let fruits = ["apple", "orange", "banana", "coconut"]
+
+// fruits[3] = "coconut"
+// fruits.push("coconut")
+// fruits.unshift("manga")
+// fruits.pop();
+// fruits.shift()
+
+// let numOfFruits = fruits.length
+// let index = fruits.indexOf("mango")
+fruits.sort().reverse()
+
+
+
+for(let fruit of fruits){
+    console.log(fruit);
     
 }
-function function2() {
-    let x = 2
-    console.log(x);
-    
-}
-
-
-
-
-
-
-
 
 
 
