@@ -581,26 +581,50 @@
 // array = a variable like structure that can hold
 //         more than 1 value
 
-let fruits = ["apple", "orange", "banana", "coconut"]
+// let fruits = ["apple", "orange", "banana", "coconut"]
 
-// fruits[3] = "coconut"
-// fruits.push("coconut")
-// fruits.unshift("manga")
-// fruits.pop();
-// fruits.shift()
+// // fruits[3] = "coconut"
+// // fruits.push("coconut")
+// // fruits.unshift("manga")
+// // fruits.pop();
+// // fruits.shift()
 
-// let numOfFruits = fruits.length
-// let index = fruits.indexOf("mango")
-fruits.sort().reverse()
+// // let numOfFruits = fruits.length
+// // let index = fruits.indexOf("mango")
+// fruits.sort().reverse()
 
 
 
-for(let fruit of fruits){
-    console.log(fruit);
+// for(let fruit of fruits){
+//     console.log(fruit);
     
-}
+// }
 
 
+// spread operator = ... allow an iterable such as an 
+//                   array or string to be expanded
+//                   into soperate elements
+//                   (unpacks the elements)
+
+let numbers = [1, 2, 3, 4, 5];
+
+let maximum = Math.max(...numbers);
+let min = Math.min(...numbers);
+
+console.log(maximum);
+console.log(min);
+
+let userName = "Ankit Kargupta";
+let letters = [...userName].join("/");
+console.log(letters);
+
+
+let fruits = ["apple", "orange", "banana"];
+let vegetables = ["carrots", "celery", "potatoes"]
+
+let foods = [...fruits, ...vegetables, "eggs", "milk"]
+
+console.log(foods);
 
 
 
