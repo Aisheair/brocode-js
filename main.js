@@ -615,7 +615,7 @@
 // console.log(min);
 
 // let userName = "Ankit Kargupta";
-// let letters = [...userName].join("/");
+// let letters = [...userName].join(" ");
 // console.log(letters);
 
 
@@ -635,67 +635,118 @@
 
 
 // function openFridge(...foods){
-//     console.log(...foods);
+//     console.log(foods);
     
+// // }
+// function getfood(...foods){
+//     return foods;
 // }
-function getfood(...foods){
-    return foods;
-}
 
-const food1 = "pizza";
-const food2 = "hamburger";
-const food3 = "hotdog";
-const food4 = "sushi";
-const food5 = "ramen";
+// const food1 = "pizza";
+// const food2 = "hamburger";
+// const food3 = "hotdog";
+// const food4 = "sushi";
+// const food5 = "ramen";
 
-// openFridge(food1, food2, food3, food4, food5)
-const foods = getfood(food1, food2, food3, food4, food5)
+// // openFridge(food1, food2, food3, food4, food5)
+// const foods = getfood(food1, food2, food3, food4, food5)
 
-console.log(foods);
+// console.log(foods);
 
 
 
-function sum(...numbers){
+// function sum(...numbers){
 
-    let result = 0;
-    for(let number of numbers){
-        result += number
-    }
-    return result
-}
+//     let result = 0;
+//     for(let number of numbers){
+//         result += number
+//     }
+//     return result
+// }
 
-// const total = sum(1, 2, 3, 4, 5)
+// // const total = sum(1, 2, 3, 4, 5)
+
+// // console.log(`your total is ${total}`);
+
+
+
+// function getavg(...numbers){
+
+//     let result = 0;
+//     for(let number of numbers){
+//         result += number
+//     }
+//     return result / numbers.length;
+// }
+
+// const total = getavg(1, 2, 3, 4, 5)
 
 // console.log(`your total is ${total}`);
 
+// function combinedstrings(...strings) {
+//     return strings.join(" ")
+// }
 
 
-function getavg(...numbers){
+// const fullname = combinedstrings("Mr", "Spongrbob", "Squarepants", "III");
 
-    let result = 0;
-    for(let number of numbers){
-        result += number
-    }
-    return result / numbers.length;
+// console.log(fullname);
+
+
+
+// callback = a function that is passed as an argument 
+//            to another function
+
+//            used to handle asynchronous operations:
+//            1. Reading a file
+//            2. Network requests
+//            3. Interacting with databases
+
+//            "Hay, when you'r done, call this next"
+
+
+hello(wait);
+
+
+function hello(callback){
+    console.log("hello!!");
+    callback();
 }
 
-const total = getavg(1, 2, 3, 4, 5)
 
-console.log(`your total is ${total}`);
+function wait() {
+    console.log("wait!");
+    
+}
 
-function combinedstrings(...strings) {
-    return strings.join(" ")
+function leave() {
+    console.log("leave!");
+    
+}
+
+function goodbye() {
+    console.log("Goodbye!");
+    
 }
 
 
-const fullname = combinedstrings("Mr", "Spongrbob", "Squarepants", "III");
-
-console.log(fullname);
 
 
+sum(displaypage, 1, 2);
 
+function sum(callback, x, y) {
+    let result = x + y
+    callback(result)
+}
 
+// function display(result) {
+//     console.log(result);
+    
+// }
 
+function displaypage(result){
+    document.getElementById("myH1").textContent = result;
+}
 
 
 
