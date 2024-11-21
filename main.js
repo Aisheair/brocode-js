@@ -756,48 +756,87 @@
 //             array.ForEach(callback)
 
 
-let number = [1, 2, 3, 4, 5]
+// let number = [1, 2, 3, 4, 5]
 
-number.forEach(cube);
-number.forEach(display);
+// number.forEach(cube);
+// number.forEach(display);
 
 
-function double(element, index, array) {
-    array[index] = element * 2
-}
-function triple(element, index, array) {
-    array[index] = element * 3
-}
-function square(element, index, array) {
-    array[index] = Math.pow(element, 2)
-}
-function cube(element, index, array) {
-    array[index] = Math.pow(element, 3)
-}
+// function double(element, index, array) {
+//     array[index] = element * 2
+// }
+// function triple(element, index, array) {
+//     array[index] = element * 3
+// }
+// function square(element, index, array) {
+//     array[index] = Math.pow(element, 2)
+// }
+// function cube(element, index, array) {
+//     array[index] = Math.pow(element, 3)
+// }
 
-function display(element){
-    console.log(element);
+// function display(element){
+//     console.log(element);
     
-}
-let fruits = ["apple", "orange", "banana", "coconut"]
+// }
+// let fruits = ["apple", "orange", "banana", "coconut"]
 
-fruits.forEach(uppercase)
-fruits.forEach(display)
+// fruits.forEach(uppercase)
+// fruits.forEach(display)
 
-function uppercase(element, index, array) {
-    array[index] = element.toUpperCase()
-;}
+// function uppercase(element, index, array) {
+//     array[index] = element.toUpperCase()
+// ;}
 
 
-function display1(element) {
-    console.log(element);
+// function display1(element) {
+//     console.log(element);
     
+// }
+
+
+// .map() = accepts a callback and applies that function 
+//          to each element of an array, then return a new array
+
+
+const numbers = [1,2, 3, 4, 5]
+
+const squares = numbers.map(square)
+const cubes = numbers.map(cube)
+console.log(squares);
+console.log(cubes);
+
+
+function square(element) {
+    return Math.pow(element, 2)
+}
+
+function cube(element) {
+    return Math.pow(element, 3)
 }
 
 
+const student = ["spongabob", "patrick", "squidwared", "sandy"]
+
+const studentUpper = student.map(uppercase)
+console.log(studentUpper);
 
 
 
+function uppercase(element){
+    return element.toUpperCase();
+}
+
+
+const dates = ["2024-1-10", "2025-2-20", "2026-3-30"]
+const formattedDates = dates.map(formatDates)
+console.log(formattedDates);
+
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`
+}
 
 
 
