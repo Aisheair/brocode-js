@@ -841,34 +841,69 @@
 
 // .filter() = creats a new array by filteing out elements
 
-let numbers = [1, 2, 3, 4, 5, 6, 7]
+// let numbers = [1, 2, 3, 4, 5, 6, 7]
 
 
-let evenNums = numbers.filter(isEven)
-console.log(evenNums);
+// let evenNums = numbers.filter(isEven)
+// console.log(evenNums);
 
-let oddNum = numbers.filter(isodd);
-console.log(oddNum);
+// let oddNum = numbers.filter(isodd);
+// console.log(oddNum);
 
 
 
-function isEven(element){
-    return element % 2 === 0;
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+// function isodd(element){
+//     return element % 2 !== 0;
+// }
+
+
+// const ages = [16, 17, 18, 18, 19, 20, 60];
+// const is18 = ages.filter(isAdult)
+// console.log(is18);
+
+
+
+// function isAdult(element) {
+//     return element >= 18
+// }
+
+// .reduce() = reduce the element of an array to a single value
+
+const prices = [5, 30, 10, 25, 15, 20]
+
+const total = prices.reduce(sum)
+
+console.log(`$${total.toFixed(2)}`);
+
+
+
+
+function sum(accumulator, element) {
+    return accumulator + element;
 }
-function isodd(element){
-    return element % 2 !== 0;
+
+const grades = [75, 50, 90, 80, 65, 95]
+
+const max = grades.reduce(getMax);
+const min = grades.reduce(getMin);
+
+console.log(max);
+console.log(min);
+
+
+function getMax(accumilator, element){
+    return Math.max(accumilator, element)
+}
+function getMin(accumilator, element){
+    return Math.min(accumilator, element)
 }
 
 
-const ages = [16, 17, 18, 18, 19, 20, 60];
-const is18 = ages.filter(isAdult)
-console.log(is18);
 
 
-
-function isAdult(element) {
-    return element >= 18
-}
 
 
 
