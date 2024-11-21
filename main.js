@@ -705,62 +705,94 @@
 //            "Hay, when you'r done, call this next"
 
 
-hello(wait);
+// hello(wait);
 
 
-function hello(callback){
-    console.log("hello!!");
-    callback();
-}
+// function hello(callback){
+//     console.log("hello!!");
+//     callback();
+// }
 
 
-function wait() {
-    console.log("wait!");
-    
-}
-
-function leave() {
-    console.log("leave!");
-    
-}
-
-function goodbye() {
-    console.log("Goodbye!");
-    
-}
-
-
-
-
-sum(displaypage, 1, 2);
-
-function sum(callback, x, y) {
-    let result = x + y
-    callback(result)
-}
-
-// function display(result) {
-//     console.log(result);
+// function wait() {
+//     console.log("wait!");
     
 // }
 
-function displaypage(result){
-    document.getElementById("myH1").textContent = result;
+// function leave() {
+//     console.log("leave!");
+    
+// }
+
+// function goodbye() {
+//     console.log("Goodbye!");
+    
+// }
+
+
+
+
+// sum(displaypage, 1, 2);
+
+// function sum(callback, x, y) {
+//     let result = x + y
+//     callback(result)
+// }
+
+// // function display(result) {
+// //     console.log(result);
+    
+// // }
+
+// function displaypage(result){
+//     document.getElementById("myH1").textContent = result;
+// }
+
+
+// forEach() = method used to iterate over the elements
+//             of an array and apply a specified function(callback)
+//             to each element
+
+//             array.ForEach(callback)
+
+
+let number = [1, 2, 3, 4, 5]
+
+number.forEach(cube);
+number.forEach(display);
+
+
+function double(element, index, array) {
+    array[index] = element * 2
+}
+function triple(element, index, array) {
+    array[index] = element * 3
+}
+function square(element, index, array) {
+    array[index] = Math.pow(element, 2)
+}
+function cube(element, index, array) {
+    array[index] = Math.pow(element, 3)
 }
 
+function display(element){
+    console.log(element);
+    
+}
+let fruits = ["apple", "orange", "banana", "coconut"]
+
+fruits.forEach(uppercase)
+fruits.forEach(display)
+
+function uppercase(element, index, array) {
+    array[index] = element.toUpperCase()
+;}
 
 
-
-
-
-
-
-
-
-
-
-
-
+function display1(element) {
+    console.log(element);
+    
+}
 
 
 
