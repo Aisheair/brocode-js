@@ -936,35 +936,77 @@
 
 
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const squares = numbers.map(function (element) {
-    return Math.pow(element, 2)
-})
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map(function (element) {
+//     return Math.pow(element, 2)
+// })
 
-const cubes = numbers.map(function (element) {
-    return Math.pow(element, 3)
+// const cubes = numbers.map(function (element) {
+//     return Math.pow(element, 3)
     
-})
+// })
 
-const evenNums = numbers.filter(function (element) {
-    return element % 2 === 0
-})
+// const evenNums = numbers.filter(function (element) {
+//     return element % 2 === 0
+// })
 
 
-console.log(squares);
-console.log(cubes);
+// console.log(squares);
+// console.log(cubes);
+// console.log(evenNums);
+
+
+
+
+// arrow functions = a concise way to write function expressions
+//                   good for simple functions that you use only once
+//                   (pareameters) => some code
+
+
+// function hello() {
+//     console.log("Hello");
+    
+// }
+// hello()
+
+
+
+// const hello = function(){
+//     console.log("hello");
+    
+// }
+
+//or
+
+// const hello = (name, age) => {console.log(`Hello ${name}`)
+//                          console.log(`you are ${age} years old`);
+//                          };
+
+
+
+//  hello("bro", 21)
+
+
+
+// setTimeout(() => console.log("hello")
+// , 3000)
+
+
+const number = [1, 2, 3, 4, 5, 6]
+
+const square= number.map((element) => Math.pow(element, 2));
+
+console.log(square);
+
+
+const evenNums = number.filter((element) => element % 2 === 0);
+
 console.log(evenNums);
 
 
+const total = number.reduce((accumulator, element) => accumulator + element)
 
-
-
-
-
-
-
-
-
+console.log(total);
 
 
 
