@@ -872,40 +872,88 @@
 
 // .reduce() = reduce the element of an array to a single value
 
-const prices = [5, 30, 10, 25, 15, 20]
+// const prices = [5, 30, 10, 25, 15, 20]
 
-const total = prices.reduce(sum)
+// const total = prices.reduce(sum)
 
-console.log(`$${total.toFixed(2)}`);
-
-
-
-
-function sum(accumulator, element) {
-    return accumulator + element;
-}
-
-const grades = [75, 50, 90, 80, 65, 95]
-
-const max = grades.reduce(getMax);
-const min = grades.reduce(getMin);
-
-console.log(max);
-console.log(min);
-
-
-function getMax(accumilator, element){
-    return Math.max(accumilator, element)
-}
-function getMin(accumilator, element){
-    return Math.min(accumilator, element)
-}
+// console.log(`$${total.toFixed(2)}`);
 
 
 
 
+// function sum(accumulator, element) {
+//     return accumulator + element;
+// }
+
+// const grades = [75, 50, 90, 80, 65, 95]
+
+// const max = grades.reduce(getMax);
+// const min = grades.reduce(getMin);
+
+// console.log(max);
+// console.log(min);
 
 
+// function getMax(accumilator, element){
+//     return Math.max(accumilator, element)
+// }
+// function getMin(accumilator, element){
+//     return Math.min(accumilator, element)
+// }
+
+
+
+
+
+
+
+
+
+// function declaration = define a reusable block of code that performs
+//                        a specific task  
+
+// function hello() {
+//     console.log("hello");
+    
+// }
+
+// function expressions = a way to define function as a 
+//                        value or vasriables
+
+
+// const hello = function(){
+//     console.log("hello");
+    
+// }
+
+// hello();
+
+
+// setTimeout(function(){
+//     console.log("Hello");
+    
+// }, 3000)
+
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const squares = numbers.map(function (element) {
+    return Math.pow(element, 2)
+})
+
+const cubes = numbers.map(function (element) {
+    return Math.pow(element, 3)
+    
+})
+
+const evenNums = numbers.filter(function (element) {
+    return element % 2 === 0
+})
+
+
+console.log(squares);
+console.log(cubes);
+console.log(evenNums);
 
 
 
